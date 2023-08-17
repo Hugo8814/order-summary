@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "red hat display"; }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 423px) {
+    html {
+      font-size: 45%; } }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e8ff;
+  height: 100vh;
+  width: 100%;
+  padding: 4rem; }
+  .container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 45rem;
+    height: min-content;
+    border-radius: 2rem;
+    gap: 2rem; }
+    .container .card__img {
+      width: 100%;
+      height: 90%;
+      border-radius: 1.5rem 1.5rem 0 0;
+      object-fit: contain;
+      margin-bottom: 2rem; }
+    .container .card__h1 {
+      color: #1f2f56;
+      font-size: 25px;
+      font-weight: 800; }
+      .container .card__h1-1 {
+        color: white; }
+    .container .card__text {
+      color: #7280a7;
+      font-size: 1.8rem;
+      text-align: center;
+      width: 70%; }
+    .container .card__box {
+      width: 80%;
+      padding: 2rem;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      border-radius: 1.4rem;
+      background-color: #f5f7ff; }
+      .container .card__box-h2 {
+        font-size: 1.4rem;
+        color: #7280a7;
+        display: flex;
+        flex-direction: column; }
+        .container .card__box-h2-1 {
+          color: #1f2f56;
+          font-size: 1.5rem;
+          font-weight: 800; }
+      .container .card__box-a {
+        font-size: 1.4rem;
+        font-weight: 700; }
+        .container .card__box-a:active, .container .card__box-a:hover {
+          font-size: 1.5rem;
+          text-decoration: none; }
+    .container .card__btn-1 {
+      background-color: #3829e0;
+      border: none;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 600;
+      padding: 2rem 10rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 2rem 5rem 0.5rem rgba(114, 128, 167, 0.4);
+      width: 90%; }
+      .container .card__btn-1:active, .container .card__btn-1:hover {
+        opacity: 0.8; }
+    .container .card__btn-2 {
+      background: transparent;
+      border: none;
+      margin: 2.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #7280a7; }
+      .container .card__btn-2:active, .container .card__btn-2:hover {
+        color: #1f2f56; }
